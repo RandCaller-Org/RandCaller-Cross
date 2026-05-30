@@ -1,3 +1,4 @@
+using Avalonia.Controls;
 using Avalonia.Input;
 using FluentAvalonia.UI.Windowing;
 
@@ -16,7 +17,16 @@ namespace RandCaller_Cross
         {
             if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed)
             {
-                BeginMoveDrag(e);
+                if (e.ClickCount == 2)
+                {
+                    WindowState = WindowState == WindowState.Maximized
+                        ? WindowState.Normal
+                        : WindowState.Maximized;
+                }
+                else
+                {
+                    BeginMoveDrag(e);
+                }
             }
         }
     }
