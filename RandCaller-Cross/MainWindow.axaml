@@ -10,5 +10,24 @@
         TransparencyBackgroundFallback="Transparent"
         TransparencyLevelHint="Mica"
         FontFamily="Segoe UI Variable">
-    Welcome to Avalonia!
+    <Grid RowDefinitions="48,*">
+        <!-- Title Bar -->
+        <Grid Grid.Row="0"
+              x:Name="TitleBarHost"
+              Background="Transparent"
+              PointerPressed="TitleBarHost_PointerPressed">
+            <TextBlock Text="RandCaller"
+                       VerticalAlignment="Center"
+                       Margin="16,0,0,0"
+                       FontSize="12"
+                       Opacity="0.8" />
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <TextBlock Text="Welcome to Avalonia!"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+        </Grid>
+    </Grid>
 </ui:FAAppWindow>
