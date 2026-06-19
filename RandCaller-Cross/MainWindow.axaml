@@ -5,9 +5,9 @@
         xmlns:ui="using:FluentAvalonia.UI.Windowing"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RandCaller_Cross.MainWindow"
-        Title="RandCaller_Cross"
+        Title="RandCaller Cross"
         Background="Transparent"
-        TransparencyBackgroundFallback="Transparent"
+        TransparencyBackgroundFallback="#F3F3F3"
         TransparencyLevelHint="Mica"
         FontFamily="Segoe UI Variable">
     <Grid RowDefinitions="48,*">
